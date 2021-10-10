@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Flex Property</title>
+   <style type="text/css">
+     body { 
+  height: 100vh;
+  text-align: center;
+  margin-top: 150px;
+  background-color: hsl(300, 100%, 25%);
+  background-color: lightblue;
+   }
+   body h1{
+      background: linear-gradient(45deg,orangered,deeppink);
+      padding: 10px;
+      width: 150px;
+      margin-left: 550px;
+      border-radius: 10px;
+      box-shadow: 0 10px 10px black;
+      transform: translateX(-500px);
+         transition: all 5.0s;
+   }
+   body h1:hover{
+      background: linear-gradient(45deg,lightpink,lightcoral);
+      cursor: pointer;
+      transform: translateX(500px);
+   }
+   .column{
+      background: linear-gradient(90deg,deeppink,teal);
+      border-radius: 10px;
+      cursor: pointer;
+   }
+   .column:hover{
+      background: linear-gradient(60deg,lightskyblue,coral);
+   }
+
+      .flex {
+  margin: 0;
+  display: flex;
+  border-top: 10px solid lavenderblush;
+  border-bottom: 10px solid limegreen;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+.flex div:first-child {
+  flex: 1;
+  background-size: cover ;
+  background-position: center;
+}
+.flex div:last-child {
+  margin: 2rem;
+  flex: 2;
+}
+.flex h2 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  font-weight: 400;
+}
+.flex p {
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 700;
+  font-family: cursive;
+}
+.flex p:last-of-type {
+  margin-bottom: 0;
+}
+.flex:first-of-type div:first-child {
+  background-image: url("images/lion.jpg") ;
+  background-size: cover;
+}
+.flex img{
+   display: none;
+}
+h2{
+  text-decoration: underline;
+}
+   </style>
+
+
+</head>
+<body>
+   <h1>Flex Property</h1>
+   <div class="column">
+    <figure class="flex">
+          <div><img src="images/lion.jpg" class="center" alt="LION"></div>
+          <div>
+            <h2><b>LION THE KING OF ANIMAL</b></h2>
+            <p>The lion is one of the most powerful land animals and is also known as a big cat. They are also known as the jungle King and they roar in such a way that can be heard up to 8 km distance. Really their qualities make them special and the king of the jungle.The lion is known as one of the bravest animals. It belongs to a Felidae family (cat) and is listed among one of the biggest cats. There are five animals in this category apart from Lion, Panthera, Tiger, Snow Leopard, Jaguar, and Leopard. All of them hail from the same family and this is the reason why they look alike. A lion looks different and is considered one of the most powerful animals.
+</p>
+          </div>
+    </figure>
+
+</div>
+
+   
+</body>
+</html>
